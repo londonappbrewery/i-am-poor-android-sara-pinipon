@@ -12,22 +12,39 @@
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_i_am"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/imageView"
+        android:layout_above="@id/image_coal"
         android:layout_centerInParent="false"
+        android:layout_marginLeft="90dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/title"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/text_poor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/image_coal"
         android:layout_centerHorizontal="true"
-        android:text="@string/textview"
-        android:textColor="@android:color/background_dark"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@id/text_i_am"
+        android:layout_toRightOf="@id/text_i_am"
+        android:text="Poor"
+        android:textColor="@android:color/background_light"
         android:textSize="40sp"
-        tools:text="@string/title" />
+        android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_coal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/coal" />
+
 </RelativeLayout>
