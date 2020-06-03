@@ -21,7 +21,8 @@
         android:layout_marginBottom="3dp"
         android:text="@string/title"
         android:textColor="@android:color/background_light"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:layout_marginStart="90dp" />
 
     <TextView
         android:id="@+id/text_poor"
@@ -34,7 +35,7 @@
         android:layout_marginBottom="3dp"
         android:layout_toEndOf="@id/text_i_am"
         android:layout_toRightOf="@id/text_i_am"
-        android:text="Poor"
+        android:text="@string/poor"
         android:textColor="@android:color/background_light"
         android:textSize="40sp"
         android:textStyle="bold" />
@@ -44,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/coal"
         app:srcCompat="@drawable/coal" />
 
 </RelativeLayout>
